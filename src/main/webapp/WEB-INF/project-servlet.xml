@@ -20,6 +20,9 @@
     <mvc:annotation-driven enable-matrix-variables="true"/>
     <context:annotation-config></context:annotation-config>
     
+    <mvc:resources mapping="/resources/**" location="/resources/"
+    cache-period="31556926"/>
+    
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="prefix" value="WEB-INF/pages/"></property>
     	<property name="suffix" value=".jsp"></property>
@@ -45,6 +48,9 @@
     		<list>
     			<value>
     				com.entities.Bus
+    			</value>
+    			<value>
+    				com.entities.User
     			</value>
     		</list>
     	</property>

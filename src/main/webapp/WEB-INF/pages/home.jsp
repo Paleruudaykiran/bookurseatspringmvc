@@ -12,6 +12,7 @@
 <title><c:out value="${page}" /></title>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <style>
 table {
 	border-collapse: collapse;
@@ -176,7 +177,7 @@ table td {
 			 <div id="addbus" >
 			 	<h1>Edit Bus Details</h1>
 	<form:form action="updateBus" method="post" modelAttribute="bus">
-		<div class="form-group">
+		<div class="form-group" >
 			<form:label for="id" path="id">Id</form:label>
 			<form:input path="id" id="id" name="id" cssClass="id rightalign" value="${bus.id}"/>
 		</div>
